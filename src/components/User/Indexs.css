@@ -1,0 +1,190 @@
+
+
+/* New Lanuch banner */
+.cards {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+
+.cards img {
+    max-height: 250px;
+    margin-right: 10px;
+
+}
+
+.cards-box {
+    background-color: black;
+    width: 90%;
+    height: 380px;
+    margin-top: 80px;
+    margin-left: 83px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-box h5 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.pro-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 80px;
+    padding-top: 40px;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+
+}
+
+.pro-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.pro-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 80px;
+    background-color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+.product-card {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+
+/* category select */
+.select-option {
+    position: relative;
+    transition: 1.8s;
+    width: 196px;
+    height: 57%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.23);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #00000081;
+    padding: 13px 50px 11px 15px;
+    /* margin-left: 46rem; */
+}
+
+.select-option.active {
+    margin-top: -200px;
+}
+
+.select-option::before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-46deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.empty-cart-message {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+/* media query */
+/* product card mq */
+@media (max-width: 576px) {
+    .pro-card {
+        padding: 20px;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .pro-card {
+        padding: 30px;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+
+/* new launch media qy */
+@media (max-width: 576px) {
+    .cards-box {
+        width: 95%;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 40px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .cards {
+        padding: 10px;
+    }
+
+    .cards img {
+        max-height: 150px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-box {
+        width: 90%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .cards {
+        padding: 15px;
+    }
+
+    .cards img {
+        max-height: 200px;
+        margin-right: 10px;
+    }
+}
+
+
+

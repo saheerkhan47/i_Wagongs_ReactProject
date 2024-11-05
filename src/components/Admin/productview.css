@@ -1,0 +1,17 @@
+.add-product-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6rem;
+}
+
+@media (max-width: 768px) { 
+    .add-product-container {
+        padding-right: 1rem; 
+    }
+}
+
+@media (max-width: 576px) { 
+    .add-product-container {
+        padding-right: 0.5rem;
+    }
+}
